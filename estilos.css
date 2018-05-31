@@ -112,8 +112,30 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 800px)
+@media (max-width: 680px)
 {
+
+	* {
+		background-image: url(images/ups.jpg);
+		background-size: cover;
+	}
+
+	header {
+		display: none;
+	}
+
+body {
+	display: none;
+}
+
+footer {
+	display: none;
+}
+
+
+
+
+	/*
 	.toggle {
 		display: block;
 	}
@@ -140,6 +162,7 @@ nav ul li a:hover {
 		color: #fff;
 		background: rgba(0, 0, 0,.5);
 	}
+	*/
 }
 
 .contenedor {
