@@ -154,10 +154,17 @@ nav ul li a:hover {
 	#art{
 		width: 208%;
 		height: auto;
-		margin-left: -50%;
+		margin-left: -55%;
 
 
 	}
+
+	#head {
+		display: none;
+	}
+
+
+	
 
 }
 
