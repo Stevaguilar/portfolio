@@ -164,7 +164,7 @@ nav ul li a:hover {
 	}
 
 
-	
+
 
 }
 
@@ -279,4 +279,20 @@ nav ul li a:hover {
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
+}
+
+#proy {
+	text-align: center;
+}
+
+#proy {
+	width: 100%;
+	text-align: center;
+	
+}
+
+#sk {
+	width: 100%;
+	text-align: center;
+
 }
