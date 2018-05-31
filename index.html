@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Portfolio</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="cards.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script scr="main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('nav ul').toggleClass('active');
+			$('div').toggleClass('col-sm-12');
+		})
+	})
+	</script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var altura = $('.menu').offset().top;
+
+		$(window).on('scroll', function(){
+			if($(window).scrollTop() > altura){
+				$('.menu').addClass('menu-fixed');
+			}else {
+				$('.menu').removeClass('menu-fixed');
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<div id="particles-js"></div>
+
+	<section>
+		<header>
+				<nav class="menu">
+					<a href="#" class="logo"><img src="images/port.png" alt="logo" width='80px' heigh='80px'></a>
+					<a class="toggle">Menu</a>
+					<ul class="">
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#proyects">Proyects</a></li>
+						<li><a href="#contact">Resume</a></li>
+					</ul>
+				</nav>
+
+		</header>
+	</section>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 texto foto">
+			<img src="images/foto.jpeg" alt="foto" width='150px' heigh='auto' class="avatar">
+			<br>
+			<h2>Steven Aguilar</h2>
+			<br>
+			<a href="https://github.com/Stevaguilar"> <img src="images/gh.png" alt="github" width='32px' heigh='32px'/></a>
+			<a href="https://www.linkedin.com/in/steven-aguilar-926539117/"> <img src="images/lk.png" alt="linkdln" width='32px' heigh='32px'/></a>
+		</div>
+			<a name="about"></a>
+		<div class="col-sm-8 about principal" >
+			<article>
+				<h2 class="titulo">About Me</h2>
+
+				<p>Hello! I have been actively learning how to code in my spare time since 2015!
+	      My coding journey began with UAM, where I learned Java, HTML and CSS in my first quarters.
+	      I continued my server-side education with C # with the MVC pattern in the advanced programming courses,
+	      And one of my goals this year was to learn the React Library with which I have been practicing together with Node.js,
+				and I like it a lot.Coding is AWESOME! I love learning new technologies and creating sweet projects.
+	      I am looking for a position as a Developer with a great company. Take me on, and together we will build many amazing things!</p>
+
+			</article>
+		</div>
+	</div>
+</div>
+
+	<div class="container contenedor principal">
+		<a name="skills"></a>
+
+		<article class="row">
+			<h2 class="titulo">Skills</h2>
+
+			<div className='card col-sm-12'>
+				<img alt='html' src="images/html.png" width='100px' heigh='100px'/>
+				<img alt='css' src="images/css.png" width='100px' heigh='100px'/>
+				<img alt='javascript' src="images/javascript.png" width='100px' heigh='100px'/>
+				<img alt='boo' src="images/boo.png" width='100px' heigh='100px'/>
+				<img alt='react' src="images/react.png" width='100px' heigh='100px'/>
+				<img alt='json' src="images/json.png" width='100px' heigh='100px'/>
+				<img alt='node' src="images/node.png" width='100px' heigh='100px'/>
+				<img alt='c' src="images/c.png" width='100px' heigh='100px'/>
+				<img alt='sqlserver' src="images/sqlserver.png" width='100px' heigh='100px'/>
+				<img alt='post' src="images/post.png" width='100px' heigh='100px'/>
+				<img alt='git' src="images/gh.png" width='100px' heigh='100px'/>
+				<img alt='heroku' src="images/heroku.png" width='100px' heigh='100px'/>
+			</div>
+
+
+
+		</article>
+
+		<article class="row">
+			<a name="proyects"></a>
+			<h2 class="titulo">Proyects</h2>
+
+			<div class="wrap">
+					<div class="tarjeta-wrap col">
+						<div class="tarjeta">
+							<div class="adelante card1"></div>
+							<div class="atras">
+								<p>This is Background generator for css styles create with html, css and js</p>
+								<a href="https://stevaguilar.github.io/Background-Generator/">Visit!</a>
+							</div>
+						</div>
+					</div>
+					<div class="tarjeta-wrap col">
+						<div class="tarjeta">
+							<div class="adelante card2"></div>
+							<div class="atras">
+								<p>This is a proyect created with react and node, and use an api for face recognition, register and give it a try!</p>
+								<a href="https://smart-brain-face-recog.herokuapp.com/">Visit!</a>
+							</div>
+						</div>
+					</div>
+					<div class="tarjeta-wrap col">
+						<div class="tarjeta">
+							<div class="adelante card3"></div>
+							<div class="atras">
+								<p>This is a simple react app that search robots from the list, follow the link and read the description!</p>
+								<a href="https://github.com/Stevaguilar/Robots">Visit!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+		</article>
+
+		<article>
+			<a name="contact"></a>
+			<h2 class="titulo">Resume</h2>
+			<p class="pcent">
+				You can download my CV here
+			</p>
+			<div >
+				<embed class="pdf" src="Resources/Resume_Steven_Aguilar.pdf" >
+			</div>
+
+
+		</article>
+
+	</div>
+
+	<footer>
+		<br>
+		<a href="https://github.com/Stevaguilar"> <img src="images/gh.png" alt="github" width='50px' heigh='50px' padding-top='10px'/></a>
+		<a href="https://www.linkedin.com/in/steven-aguilar-926539117/"> <img src="images/lk.png" alt="linkdln" width='50px' heigh='50px'padding-top='10px'/></a>
+  <p>Designed and Developed by Steven Aguilar</p>
+  <p>Contact information: <a href="mailto:ste_1507@hotmail.com">ste_1507@hotmail.com</a>.</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src"script.js"></script>
+	<script src="particles.js"></script>
+	<script src="particulas.js"></script>
+</body>
+</html>
